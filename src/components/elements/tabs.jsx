@@ -2,14 +2,14 @@
 export function Highlight(){
     return(
         <>
-        <p className=" bg-zinc-800 p-4 rounded-lg transition-[filter] duration-200 ease-in hover:brightness-150">Tab1</p> 
+        <p className=" bg-purple-800 text-slate-200 p-4 rounded-lg transition-[filter] duration-200 ease-in hover:brightness-150">Tab1</p> 
     </>
     )
 }
 export function Inverse(){
     return(
         <>
-        <p className=" bg-zinc-800 p-4 rounded-lg transition-colors duration-200 ease-in hover:bg-slate-100 hover:text-zinc-800">Tab2</p> 
+        <p className=" bg-purple-800  text-slate-200 p-4 rounded-lg transition-colors duration-200 ease-in hover:bg-slate-100 hover:text-zinc-800">Tab2</p> 
     </>
     )
 }
@@ -34,7 +34,7 @@ export function Underline(){
 export function Border(){
     return(
         <>
-        <p className=" bg-zinc-800 py-4 px-8 border-2 border-transparent transition-[border] hover:border-slate-100 rounded-lg">Tab5</p> 
+        <p className=" bg-purple-200 py-4 px-8 border-2 border-transparent transition-[border] hover:border-slate-800 rounded-lg">Tab5</p> 
     </>
     )
 }

@@ -4,7 +4,7 @@ export default function MobileNav (){
     return(
         
         <nav className=" absolute left-0   " >
-                <ul className=" glassMenu sm:hidden bg-[#171717] p-8 min-w-[80vw] h-[100vh]">
+                <ul className=" glass sm:hidden bg-[#171717] mt-4 p-8 w-[100vw] h-[100vh]">
                     <li className=" text-2xl w-fit p-2 my-2 underlineLink ">
                         <Link to='/button'>Buttons</Link>
                     </li>

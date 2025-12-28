@@ -3,16 +3,21 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  line-height: 1.5;
-
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #171717;
-
+  --textColor: #171717;
+  --bgColor: #f6f2f2;
+  --navHoverColor: #d3abe9;
+  --navColor: #ede5f8;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body{
+  line-height: 1.5;
+  color: var(--textColor);
+  background-color: var(--bgColor);
 }
 h1,h2{
   font-family: Nunito ;
@@ -20,25 +25,34 @@ h1,h2{
 p{
   font-family: Inter ;
 }
-@layer components {
-  .underlineLink {
-    @apply relative after:content-[''] after:w-0 after:h-0 after:transition-all after:duration-200 hover:after:w-full hover:after:h-[2px] hover:after:bg-sky-400 hover:after:absolute hover:after:bottom-[4px] hover:after:left-0;
-  }
+nav{
+  display: flex;
+  align-items: center;
 }
+nav a{
+  color: #250544;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+nav a:hover{
+  background-color: var(--navHoverColor);
+  transition: background-color 0.2s ease-in;
+  border-radius: 2rem;
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+}
+
 .glass{
 /* From https://css.glass */
-  background: rgba(23, 23, 23, 0.5);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-  border: 1px solid rgba(23, 23, 23, 0.3);
-}
-.glassMenu{
-/* From https://css.glass */
-  background: rgba(23, 23, 23, 0.75);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
-  border: 1px solid rgba(23, 23, 23, 0.3);
+  background: var(--navColor);
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 4px 30px var(--navColor);
+  backdrop-filter: blur(calc(7/16)rem);
+  -webkit-backdrop-filter: blur(calc(7/16)rem);
+  border: 1px solid #250544;
 }
