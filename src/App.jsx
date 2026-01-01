@@ -1,6 +1,7 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import Layout from './pages/layout.jsx'
 import Home from './pages/home.jsx'
+import Foundation from './pages/Foundation.jsx'
 import Button from './pages/button.jsx'
 import Tab from './pages/tab.jsx'
 import Image from './pages/image.jsx'
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
+            <Route path='foundation' element={<Foundation />} />
             <Route path='button' element={<Button />} />
             <Route path='tab' element={<Tab />} />
             <Route path='image' element={<Image />} />

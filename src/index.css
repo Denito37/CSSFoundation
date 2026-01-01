@@ -2,6 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   --textColor: #171717;
   --bgColor: #f6f2f2;
@@ -19,11 +20,32 @@ body{
   color: var(--textColor);
   background-color: var(--bgColor);
 }
-h1,h2{
-  font-family: Nunito ;
+main{
+  width:clamp(45ch, 80vw, 150ch);
+  margin: 0 auto;
+}
+h1{
+  font: bold clamp(1.25rem, 80vw ,3.5rem) Nunito;
+  text-align: center;
+  line-height: 2.75rem;
+}
+h2{
+  font: bold clamp(1.25rem, 80vw ,2rem) Nunito;
+  text-align: center;
+  line-height: 2rem;
+}
+h3{
+  font: bold clamp(1.15rem, 80vw, 1.5rem) Nunito;
+  text-align: left;
 }
 p{
-  font-family: Inter ;
+  font: clamp(1rem, 80vw, 1.125rem) Inter ;
+  width: clamp(25ch, 100%, 80ch);
+  line-height: 1.75rem;
+}
+section{
+  width:clamp(16rem, 80vw, 64rem) ;
+  margin: 0 auto;
 }
 nav{
   display: flex;
@@ -34,19 +56,27 @@ nav a{
   font-weight: bold;
   padding: 0.5rem;
 }
+nav ul{
+  scrollbar-width: none;
+}
 nav a:hover{
   background-color: var(--navHoverColor);
   transition: background-color 0.2s ease-in;
   border-radius: 2rem;
 }
+
+.mobileNav{
+  width: 96vw;
+  height: 100vh;
+  border-radius:  1rem 1rem 0rem 0rem !important;
+}
 .hero{
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 60vh;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 }
-
 .glass{
 /* From https://css.glass */
   background: var(--navColor);

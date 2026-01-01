@@ -4,18 +4,18 @@ export default function Entry({entry, element}){
         <article className="p-4 my-6 mx-6 grid place-content-center">
             {
             entry.intro && 
-            <p className=" mx-auto px-4 my-6 max-w-[70ch] text-lg first-letter:text-5xl">
+            <p className=" mx-auto px-4 my-6 first-letter:text-5xl">
                 {entry.intro}
             </p> 
             }
-            <h2 className="text-4xl text-center md:text-left font-bold p-4">
+            <h2 className="text-center md:text-left font-bold p-4">
                 {entry.title}
             </h2>
-            <div className=" grid md:grid-cols-3 md:max-w-3xl text-center md:text-left py-4">
+            <div className=" grid md:grid-cols-3 text-center md:text-left py-4">
                 <div className="justify-self-center self-center">
                     {element}
                 </div>
-                <p className="p-4 text-lg md:col-span-2">
+                <p className="p-4 md:col-span-2">
                     {entry.description}
                 </p>
             </div>
