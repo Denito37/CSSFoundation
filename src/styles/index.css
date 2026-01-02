@@ -56,15 +56,15 @@ nav a{
   font-weight: bold;
   padding: 0.5rem;
 }
-nav ul{
-  scrollbar-width: none;
-}
 nav a:hover{
   background-color: var(--navHoverColor);
   transition: background-color 0.2s ease-in;
   border-radius: 2rem;
 }
 
+.scrollbar-none{
+  scrollbar-width: none;
+}
 .mobileNav{
   width: 96vw;
   height: 100vh;
