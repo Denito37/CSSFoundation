@@ -1,4 +1,5 @@
 import Copy from '/copy.svg'
+import { formatCode } from '../functions/textParser'
 export default function Entry({entry, element}){
     return(
         <article className="p-4 my-6 mx-6 grid place-content-center">
@@ -20,10 +21,10 @@ export default function Entry({entry, element}){
                 </p>
             </div>
             <code>
-                <pre className=" relative md:my-4 py-4 px-8 mx-4 bg-slate-800 text-amber-400 border-2 rounded-xl max-w-[80vw] sm:w-full md:max-w-3xl overflow-scroll">
-                    {entry.code}
+                <pre className="scrollbar-none relative md:my-4 py-4 px-8 mx-4 bg-slate-800 text-amber-400 border-2 rounded-xl max-w-[80vw] sm:w-full md:max-w-3xl overflow-scroll">
+                    {formatCode(entry.code)}
                     <button 
-                        onClick={() => {navigator.clipboard.writeText(entry.code)}} 
+                        onClick={() => {navigator.clipboard.writeText(formatCode(entry.code))}} 
                         className=' p-2 bg-slate-500 rounded-xl absolute top-0 right-0 transition-[filter] hover:brightness-200 '>
                         <img title='Copy' src={Copy} alt="copy" width={50} height={50} />
                     </button>

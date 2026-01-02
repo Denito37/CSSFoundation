@@ -7,7 +7,7 @@ import Tab from './pages/tab.jsx'
 import Image from './pages/image.jsx'
 import Error from './pages/error.jsx'
 import Loading from './pages/loading.jsx'
-import { ScrollToTop } from './components/functions/ScrollTT.js'
+import { ScrollToTop } from './functions/ScrollTT.js'
 function App() {
   return (
       <BrowserRouter>

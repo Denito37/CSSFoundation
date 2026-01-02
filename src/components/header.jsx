@@ -37,7 +37,7 @@ export default function Header(){
                 </div>
                 
                 <nav>
-                    <ul className=" hidden sm:grid grid-cols-3 grid-rows-2 sm:grid-rows-1 sm:grid-cols-7 content-center justify-items-center gap-x-2 p-4 max-w-3xl mx-auto overflow-x-scroll">
+                    <ul className="scrollbar-none hidden sm:grid grid-cols-3 grid-rows-2 sm:grid-rows-1 sm:grid-cols-7 content-center justify-items-center gap-x-2 p-4 max-w-3xl mx-auto overflow-x-scroll">
                         <li className=" w-fit p-2 ">
                             <Link to='/'>Home</Link>
                         </li>
