@@ -1,4 +1,4 @@
-import loading from '/loading.svg'
+import loading from '../../assets/loading.svg'
 export function Spinner(){
     return(
         <>

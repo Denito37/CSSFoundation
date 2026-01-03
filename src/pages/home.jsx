@@ -8,8 +8,8 @@ export default function Home(){
                         <span className=" transition-[color] hover:text-purple-800"> CSS </span>
                     </h1>
                     <p className='text-sm my-2 text-slate-700'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sunt, placeat quisquam aut temporibus ducimus hic delectus facere doloremque debitis quos quas earum in? Iusto accusantium dolorum natus delectus voluptatum?    
-                    </p>  
+                        
+                    </p>
             </section>
 
             <section className="my-12 md:mx-auto">

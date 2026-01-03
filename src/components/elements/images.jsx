@@ -1,7 +1,7 @@
-import orange from '/orange.jpg'
-import egg from '/egg.jpg'
-import cherry from '/cherry.jpg'
-import cone from '/cone.jpg'
+import orange from '../../assets/orange.jpg'
+import egg from '../../assets/egg.jpg'
+import cherry from '../../assets/cherry.jpg'
+import cone from '../../assets/cone.jpg'
 export function Info(){
     return(
         <div className=' relative rounded-2xl w-[150px] h-[150px]'>

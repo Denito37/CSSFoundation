@@ -1,5 +1,5 @@
-import trash from '/trash.svg'
-import add from "/add.svg"
+import trash from '../../assets/trash.svg'
+import add from "../../assets/add.svg"
 export function Trash(){
     return(
         <button className="w-fit h-fit p-8 bg-transparent rounded-full scale-90 transition-all duration-200 ease-in hover:bg-purple-300 hover:scale-100">

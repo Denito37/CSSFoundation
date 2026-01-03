@@ -21,7 +21,7 @@ body{
   background-color: var(--bgColor);
 }
 main{
-  width:clamp(45ch, 80vw, 150ch);
+  width:clamp(20ch, 80vw, 150ch);
   margin: 0 auto;
 }
 h1{
@@ -61,12 +61,14 @@ nav a:hover{
   transition: background-color 0.2s ease-in;
   border-radius: 2rem;
 }
-
+code{
+  width:clamp(20rem, 80%, 100rem )
+}
 .scrollbar-none{
   scrollbar-width: none;
 }
 .mobileNav{
-  width: 96vw;
+  width: 100vw;
   height: 100vh;
   border-radius:  1rem 1rem 0rem 0rem !important;
 }

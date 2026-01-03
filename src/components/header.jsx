@@ -1,6 +1,6 @@
 import CSS from '/Purple_CSS_Logo.svg.png'
-import menu from '/menu.svg'
-import close from '/clear-icon.svg'
+import menu from '../assets/menu.svg'
+import close from '../assets/close-icon.svg'
 import Nav from './nav';
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
@@ -37,7 +37,7 @@ export default function Header(){
                 </div>
                 
                 <nav>
-                    <ul className="scrollbar-none hidden sm:grid grid-cols-3 grid-rows-2 sm:grid-rows-1 sm:grid-cols-7 content-center justify-items-center gap-x-2 p-4 max-w-3xl mx-auto overflow-x-scroll">
+                    <ul className="scrollbar-none hidden sm:flex grid-cols-3 grid-rows-2 content-center justify-items-center gap-x-2 p-4 max-w-5xl mx-auto overflow-x-scroll">
                         <li className=" w-fit p-2 ">
                             <Link to='/'>Home</Link>
                         </li>
