@@ -4,7 +4,7 @@ export default function Nav(){
     return(
         
         <nav className=" absolute left-0" >
-                <ul className=" glass sm:hidden bg-[#171717] mt-4 p-8 mobileNav">
+                <ul className=" glass sm:hidden mobileNav">
                     <li className=" text-2xl w-fit p-2 my-2">
                         <Link to='/'>Home</Link>
                     </li>

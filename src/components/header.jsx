@@ -2,6 +2,7 @@ import CSS from '/Purple_CSS_Logo.svg.png'
 import menu from '../assets/menu.svg'
 import close from '../assets/close-icon.svg'
 import Nav from './nav';
+import { useTheme } from './theme.jsx';
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
@@ -11,6 +12,7 @@ export default function Header(){
     let navigate = useNavigate(); 
     const location = useLocation();
     const [showNav, setShowNav] = useState(false)
+    const {isDark, handleTheme} = useTheme()
 
     const toggleNavItems = () => {
     setShowNav(!showNav)
@@ -59,6 +61,11 @@ export default function Header(){
                         <li className=" w-fit p-2">
                             <Link to='/loading'>Loading</Link>
                         </li>
+                        <button
+                            aria-label='Toggle Theme'
+                            onClick={handleTheme}>
+                            Theme Toggle
+                        </button>
                     </ul>
                 </nav>
             </header>

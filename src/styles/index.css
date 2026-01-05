@@ -8,13 +8,42 @@
   --bgColor: #f6f2f2;
   --navHoverColor: #d3abe9;
   --navColor: #ede5f8;
+  --LinkColor: #250544;
+  --boxModelBG: #f8fafc;
+  --boxModelBorder: #334155;
+  --svg-fill:#000;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+[data-theme='dark']{
+  --textColor: #f6f2f2;
+  --bgColor: #171717;
+  --navHoverColor: #b55fe4;
+  --navColor: #0b061a;
+  --LinkColor: #eee9f3;
+  --boxModelBG: #334155;
+  --boxModelBorder: #f8fafc;
+  --svg-fill:#f6f2f2;
+}
+.svg-icon{
+  fill: var(--svg-fill);
+  stroke: var(--svg-fill);
+}
 
+.box-model{
+  background-color: var(--boxModelBG);
+  color: var(--boxModelBorder);
+  border-color: var(--boxModelBorder);
+}
+.flex-layout> div,.grid-layout> div{
+  border-color: var(--boxModelBorder);
+}
+.flex-layout ~ p{
+  color: var(--textColor);
+}
 body{
   line-height: 1.5;
   color: var(--textColor);
@@ -52,7 +81,7 @@ nav{
   align-items: center;
 }
 nav a{
-  color: #250544;
+  color:var(--LinkColor);
   font-weight: bold;
   padding: 0.5rem;
 }
@@ -68,6 +97,8 @@ code{
   scrollbar-width: none;
 }
 .mobileNav{
+  margin:1rem 0 0 0;
+  padding:2rem;
   width: 100vw;
   height: 100vh;
   border-radius:  1rem 1rem 0rem 0rem !important;
