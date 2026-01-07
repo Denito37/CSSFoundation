@@ -1,6 +1,10 @@
 import CSS from '/Purple_CSS_Logo.svg.png'
 import menu from '../assets/menu.svg'
+import menuDark from '../assets/menuDark.svg'
 import close from '../assets/close-icon.svg'
+import closeDark from '../assets/close-iconDark.svg'
+import darkmode from '../assets/darkmode.png'
+import lightmode from '../assets/lightmode.png'
 import Nav from './nav';
 import { useTheme } from './theme.jsx';
 import { Link } from "react-router-dom"
@@ -29,8 +33,8 @@ export default function Header(){
                 <img onClick={() => navigate('/')} className='order-2 mx-auto sm:mx-0' src={CSS} width={75} height={75} title='Home' alt="CSS Collection" />
                 <button onClick={() => toggleNavItems()} className='sm:hidden order-1'>
                     {showNav == false ?
-                    <img src={menu} width={50} height={50} alt="open menu button" title='open menu' />
-                    : <img src={close} width={50} height={50} alt='close menu button' title='close menu'  />}
+                    <img src={isDark? menuDark :menu} width={50} height={50} alt="open menu button" title='open menu' />
+                    : <img src={isDark ? closeDark:close} width={50} height={50} alt='close menu button' title='close menu'  />}
                 </button>
                 </div>
 
@@ -39,7 +43,7 @@ export default function Header(){
                 </div>
                 
                 <nav>
-                    <ul className="scrollbar-none hidden sm:flex grid-cols-3 grid-rows-2 content-center justify-items-center gap-x-2 p-4 max-w-5xl mx-auto overflow-x-scroll">
+                    <ul className="scrollbar-none hidden sm:flex grid-cols-3 grid-rows-2 content-center justify-items-center items-center gap-x-2 p-4 max-w-5xl mx-auto overflow-x-scroll">
                         <li className=" w-fit p-2 ">
                             <Link to='/'>Home</Link>
                         </li>
@@ -62,9 +66,14 @@ export default function Header(){
                             <Link to='/loading'>Loading</Link>
                         </li>
                         <button
+                            className=' bg-slate-50 w-fit h-fit rounded-2xl center'
                             aria-label='Toggle Theme'
                             onClick={handleTheme}>
-                            Theme Toggle
+                            {
+                                isDark 
+                                ? <img src={lightmode} width={25} alt=" change to light mode" />
+                                : <img src={darkmode} width={25} alt=" change to dark mode" />
+                            }
                         </button>
                     </ul>
                 </nav>

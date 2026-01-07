@@ -11,6 +11,12 @@ export default function Foundation(){
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, totam repellendus. Cum laborum reiciendis non voluptatum eaque explicabo possimus itaque. Eos facere deserunt animi consequuntur veritatis. Facilis dolorem nostrum doloribus.
             </p>
             <h3 className="p-2 m-2 text-center md:text-left">
+                Reading CSS
+            </h3>
+            <p className="p-2 mx-auto my-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi qui voluptate sapiente blanditiis minus optio laboriosam, quod consectetur eveniet labore omnis ipsa cum voluptatibus facilis delectus, laudantium provident nulla sed?
+            </p>
+            <h3 className="p-2 m-2 text-center md:text-left">
                 Components: The Box Model
             </h3>
             <div className="box-model py-20 px-10 m-10 border-4 text-center font-bold sm:text-3xl">
@@ -22,7 +28,7 @@ export default function Foundation(){
             <h3 className="p-2 m-2 text-center md:text-left">
                 Layouts: Flex & Grid
             </h3>
-            <div className="flex-layout m-4 flex justify-center gap-2">
+            <div className="flex-layout m-4 flex flex-wrap justify-center gap-2">
                 <div className="p-12 border-2">Flex 1</div>
                 <div className="p-12 border-2">Flex 2</div>
                 <div className="p-12 border-2">Flex 3</div>
